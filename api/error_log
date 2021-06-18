@@ -1,0 +1,308 @@
+[12-Nov-2020 03:31:15 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:15 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:15 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:15 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:31:15 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:31:15 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:31:15 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:31:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:22 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:22 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Call to a member function query() on boolean in /home/cuo51506/public_html/qlsx/api/viewlist_board/get_company_slide.php on line 9
+[12-Nov-2020 03:31:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:22 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:22 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Call to a member function query() on boolean in /home/cuo51506/public_html/qlsx/api/viewlist_board/get_customer_product.php on line 43
+[12-Nov-2020 03:31:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:22 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:22 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:22 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order.php on line 89
+[12-Nov-2020 10:31:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order.php on line 90
+[12-Nov-2020 03:31:33 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:33 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:33 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:33 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:31:33 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:31:33 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:31:33 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:31:34 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:34 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:34 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:34 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:31:34 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:31:34 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:31:34 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:31:35 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:35 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:35 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:35 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:31:35 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:31:35 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:31:35 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:31:46 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:46 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:46 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:31:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:31:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:31:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:31:50 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:31:50 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:31:50 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:31:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:31:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:31:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:31:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:32:08 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:32:08 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:32:08 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:32:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:32:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:32:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:32:08 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:32:20 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:32:20 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:32:20 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:32:20 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_production.php on line 84
+[12-Nov-2020 10:32:20 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_production.php on line 85
+[12-Nov-2020 03:32:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:32:22 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:32:22 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:32:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Call to a member function query() on boolean in /home/cuo51506/public_html/qlsx/api/viewlist_board/get_company_slide.php on line 9
+[12-Nov-2020 03:32:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:32:22 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:32:22 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:32:22 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order.php on line 89
+[12-Nov-2020 10:32:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order.php on line 90
+[12-Nov-2020 03:32:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:32:22 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:32:22 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:32:22 Asia/Ho_Chi_Minh] PHP Fatal error:  Call to a member function query() on boolean in /home/cuo51506/public_html/qlsx/api/viewlist_board/get_customer_product.php on line 43
+[12-Nov-2020 03:32:55 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:32:55 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:32:55 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:32:55 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:32:55 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:32:55 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:32:55 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:33:00 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:33:00 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:33:00 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:33:00 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:33:00 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:33:00 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:33:00 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:33:01 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:33:01 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:33:01 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:33:01 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:33:01 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:33:01 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:33:01 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:33:03 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:33:03 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:33:03 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:33:03 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:33:03 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:33:03 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:33:03 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:34:56 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:34:56 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 03:35:14 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:35:14 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:35:14 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:35:14 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:35:14 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:35:14 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:35:14 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:35:27 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:35:27 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:35:27 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 03:35:27 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:35:27 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:35:27 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 03:35:58 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:35:58 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:35:58 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:35:58 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:35:58 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:35:58 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:35:58 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:35:58 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:35:58 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:35:58 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:35:58 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_production.php on line 84
+[12-Nov-2020 10:35:58 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_production.php on line 85
+[12-Nov-2020 03:36:01 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:36:01 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:36:01 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:36:01 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_production.php on line 84
+[12-Nov-2020 10:36:01 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_production.php on line 85
+[12-Nov-2020 03:36:09 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:36:09 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:36:09 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:36:09 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:36:09 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:36:09 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:36:09 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 03:36:26 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cuo51506/public_html/qlsx/lib/connect.php on line 10
+[12-Nov-2020 03:36:26 UTC] PHP Notice:  Trying to get property of non-object in /home/cuo51506/public_html/qlsx/lib/connect.php on line 13
+[12-Nov-2020 03:36:26 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/lib/connect.php on line 17
+[12-Nov-2020 10:36:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 44
+[12-Nov-2020 10:36:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 45
+[12-Nov-2020 10:36:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 96
+[12-Nov-2020 10:36:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cuo51506/public_html/qlsx/api/viewlist_board/login.php on line 98
+[12-Nov-2020 15:44:10 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[12-Nov-2020 15:44:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[12-Nov-2020 15:44:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[12-Nov-2020 15:44:37 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[12-Nov-2020 15:44:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[12-Nov-2020 15:44:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[13-Nov-2020 09:29:13 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_product_production in /home/cuo51506/public_html/qlsx/api/employee_board/update_order_production_status.php on line 174
+[13-Nov-2020 09:45:11 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[13-Nov-2020 09:47:35 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[13-Nov-2020 11:30:42 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[13-Nov-2020 11:35:09 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[13-Nov-2020 11:38:28 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[13-Nov-2020 13:17:41 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query(): Empty query in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 169
+[13-Nov-2020 13:17:41 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 170
+[13-Nov-2020 13:17:52 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_query(): Empty query in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 169
+[13-Nov-2020 13:17:52 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 170
+[14-Nov-2020 09:51:46 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[14-Nov-2020 09:51:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[14-Nov-2020 09:51:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[14-Nov-2020 11:15:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:15:27 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:15:37 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:16:09 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:16:17 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:16:22 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:16:28 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:18:47 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:19:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:47:53 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:53:52 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:55:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 11:57:48 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 12:00:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 12:00:42 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 13:21:26 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[14-Nov-2020 13:21:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[14-Nov-2020 13:21:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[14-Nov-2020 13:31:02 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[14-Nov-2020 13:32:44 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[14-Nov-2020 13:33:01 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[14-Nov-2020 15:21:22 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:22:34 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:25:20 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:27:06 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:28:13 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:35:28 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:35:33 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[14-Nov-2020 15:35:39 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 09:50:53 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 09:51:47 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 09:52:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 09:53:27 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 09:53:31 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 09:53:54 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: order_slide in /home/cuo51506/public_html/qlsx/api/admin_board/slide_manager.php on line 23
+[16-Nov-2020 10:25:30 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_product_production in /home/cuo51506/public_html/qlsx/api/employee_board/update_order_production_status.php on line 58
+[16-Nov-2020 10:27:52 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_product_production in /home/cuo51506/public_html/qlsx/api/employee_board/update_order_production_status.php on line 58
+[16-Nov-2020 10:30:19 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_product_production in /home/cuo51506/public_html/qlsx/api/employee_board/update_order_production_status.php on line 58
+[16-Nov-2020 10:38:08 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 126
+[16-Nov-2020 11:36:18 Asia/Ho_Chi_Minh] PHP Warning:  unlink(../): Is a directory in /home/cuo51506/public_html/qlsx/api/admin_board/product_feature_manager.php on line 183
+[16-Nov-2020 11:36:27 Asia/Ho_Chi_Minh] PHP Warning:  unlink(../): Is a directory in /home/cuo51506/public_html/qlsx/api/admin_board/product_feature_manager.php on line 183
+[16-Nov-2020 13:40:10 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[16-Nov-2020 13:40:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[16-Nov-2020 13:40:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[16-Nov-2020 13:40:48 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[16-Nov-2020 13:40:48 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[16-Nov-2020 13:40:48 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[16-Nov-2020 13:50:47 Asia/Ho_Chi_Minh] PHP Warning:  unlink(../): Is a directory in /home/cuo51506/public_html/qlsx/api/admin_board/product_feature_manager.php on line 183
+[16-Nov-2020 15:30:51 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[16-Nov-2020 15:30:57 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[16-Nov-2020 15:31:48 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[16-Nov-2020 15:31:50 Asia/Ho_Chi_Minh] PHP Warning:  unlink(../): Is a directory in /home/cuo51506/public_html/qlsx/api/admin_board/product_feature_manager.php on line 183
+[16-Nov-2020 15:32:06 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[16-Nov-2020 16:00:30 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[16-Nov-2020 16:00:47 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[16-Nov-2020 16:01:13 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[16-Nov-2020 16:02:54 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[16-Nov-2020 16:03:26 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[17-Nov-2020 16:08:18 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[17-Nov-2020 16:16:08 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:16:27 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:16:33 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:16:41 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:17:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:17:32 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:17:46 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:20:28 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:23:05 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:23:16 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:24:48 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[17-Nov-2020 16:25:39 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[18-Nov-2020 09:14:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[18-Nov-2020 09:14:24 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[18-Nov-2020 09:14:24 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[18-Nov-2020 09:15:50 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[18-Nov-2020 09:15:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[18-Nov-2020 09:15:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[18-Nov-2020 15:07:28 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[18-Nov-2020 15:07:59 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[18-Nov-2020 15:08:23 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[19-Nov-2020 17:08:27 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[19-Nov-2020 17:08:27 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[19-Nov-2020 17:08:27 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[20-Nov-2020 11:26:46 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[20-Nov-2020 11:26:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[20-Nov-2020 11:26:46 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[20-Nov-2020 11:27:10 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[20-Nov-2020 11:27:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[20-Nov-2020 11:27:10 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[20-Nov-2020 11:29:30 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[20-Nov-2020 11:29:30 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[20-Nov-2020 11:29:30 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[20-Nov-2020 11:34:20 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[20-Nov-2020 11:35:20 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[20-Nov-2020 11:35:40 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[20-Nov-2020 11:36:19 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[20-Nov-2020 11:36:41 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[20-Nov-2020 11:36:49 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[20-Nov-2020 11:36:52 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[20-Nov-2020 16:39:40 Asia/Ho_Chi_Minh] PHP Warning:  unlink(../): Is a directory in /home/cuo51506/public_html/qlsx/api/admin_board/product_feature_manager.php on line 183
+[25-Nov-2020 13:54:54 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id_code in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 102
+[26-Nov-2020 09:32:11 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[26-Nov-2020 09:32:11 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[26-Nov-2020 09:32:11 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[26-Nov-2020 13:20:29 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/supplier_manager.php on line 176
+[26-Nov-2020 16:58:20 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 16:58:31 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 16:58:32 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 16:58:40 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 16:58:41 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 16:58:49 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 16:58:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_export.php on line 96
+[26-Nov-2020 17:16:24 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in /home/cuo51506/public_html/qlsx/api/admin_board/create_order_export_storeage.php on line 45
+[26-Nov-2020 17:16:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: specification_quantity in /home/cuo51506/public_html/qlsx/api/admin_board/create_order_export_storeage.php on line 46
+[27-Nov-2020 13:38:19 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 171
+[27-Nov-2020 13:38:40 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 171
+[27-Nov-2020 13:38:44 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 171
+[27-Nov-2020 13:39:06 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 171
+[28-Nov-2020 16:02:54 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[28-Nov-2020 16:02:54 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[28-Nov-2020 16:02:54 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[28-Nov-2020 16:03:37 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[28-Nov-2020 16:03:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[28-Nov-2020 16:03:37 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[28-Nov-2020 16:58:32 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[28-Nov-2020 16:58:32 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[28-Nov-2020 16:58:32 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[30-Nov-2020 14:21:50 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/viewlist_board/list_order_history.php on line 171
+[30-Nov-2020 17:05:59 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[30-Nov-2020 17:05:59 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[30-Nov-2020 17:05:59 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
+[30-Nov-2020 17:06:44 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: sql_check_material_code in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[30-Nov-2020 17:06:44 Asia/Ho_Chi_Minh] PHP Warning:  mysqli::query(): Empty query in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 119
+[30-Nov-2020 17:06:44 Asia/Ho_Chi_Minh] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cuo51506/public_html/qlsx/api/admin_board/product_manager.php on line 120
