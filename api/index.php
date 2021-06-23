@@ -164,9 +164,14 @@ switch ($detect) {
             break;
         }
         
-    case 'create_booking':
+    case 'create_order':
         {
-            include_once 'customer_board/create_booking.php';
+            include_once 'customer_board/create_order.php';
+            break;
+        }
+    case 'cancel_order':
+        {
+            include_once 'customer_board/cancel_order.php';
             break;
         }
     

@@ -17,7 +17,14 @@ switch ($typeManager) {
         break;
         
     case 'create_product':
-        
+
+        $id_admin = '';
+        if (isset($_REQUEST['id_admin']) && ! empty($_REQUEST['id_admin'])) {
+            $id_admin = $_REQUEST['id_admin'];
+        } else {
+            returnError("Nhập id_admin!");
+        }
+
         $id_customer = '';
         if (isset($_REQUEST['id_customer']) && ! empty($_REQUEST['id_customer'])) {
             $id_customer = $_REQUEST['id_customer'];
@@ -72,6 +79,21 @@ switch ($typeManager) {
         } else {
             returnError("Nhập mô tả sản phẩm!");
         }
+
+        $id_packet = '';
+        if (isset($_REQUEST['id_packet']) && ! empty($_REQUEST['id_packet'])) {
+            $id_packet = $_REQUEST['id_packet'];
+        } else {
+            returnError("Nhập đóng gói!");
+        }
+
+        $product_unit_packet = '';
+        if (isset($_REQUEST['product_unit_packet']) && ! empty($_REQUEST['product_unit_packet'])) {
+            $product_unit_packet = $_REQUEST['product_unit_packet'];
+        } else {
+            returnError("Nhập quy cách!");
+        }
+
         $safety_stock = '';
         if (isset($_REQUEST['safety_stock']) && ! empty($_REQUEST['safety_stock'])) {
             $safety_stock = $_REQUEST['safety_stock'];
@@ -80,9 +102,12 @@ switch ($typeManager) {
         }
         
         $sql_create_product = "INSERT INTO tbl_product_product SET
+                id_admin = '" . $id_admin . "',
                 id_customer = '" . $id_customer . "',
                 id_category = '" . $id_category . "',
                 id_unit = '" . $id_unit . "',
+                id_packet = '" . $id_unit . "',
+                product_unit_packet = '" . $product_unit_packet . "',
                 product_name = '" . $product_name . "',
                 product_code = '" . $product_code . "',
                 product_description = '" . $product_description . "',
@@ -99,7 +124,7 @@ switch ($typeManager) {
         break;
         
     case 'update_product':
-        
+        $query = "UPDATE tbl_product_product SET ";
         $id_product = '';
         if (isset($_REQUEST['id_product']) && ! empty($_REQUEST['id_product'])) {
             $id_product = $_REQUEST['id_product'];
@@ -109,79 +134,51 @@ switch ($typeManager) {
         
         $check = 0;
         
-        if (isset($_REQUEST['product_code']) && ! empty($_REQUEST['product_code'])) {
-            
-            $product_code = $_REQUEST['product_code'];
-            
-            // check employee_code exists
-            $sql_check_product_code = "SELECT * FROM tbl_product_product WHERE product_code = '" . $product_code . "' AND id != '".$id_product."'
-            ";
-            $result_check = $conn->query($sql_check_material_code);
-            $num_result_check = mysqli_num_rows($result_check);
-            if ($num_result_check > 0) {
-                returnError("Mã sản phẩm đã tồn tại!");
-            }
-            
-            $check ++;
-            $query = "UPDATE tbl_product_product SET ";
-            $query .= " product_code  = '" . $product_code . "' ";
-            $query .= " WHERE id = '" . $id_product . "'";
-            // Create post
-            if ($conn->query($query)) {
-                $check --;
-            }
-        }
         if (isset($_REQUEST['id_unit']) && ! empty($_REQUEST['id_unit'])) {
             
             $id_unit = $_REQUEST['id_unit'];
+            $query .= " id_unit  = '" . $id_unit . "', ";
+           
+        }
+        if (isset($_REQUEST['id_packet']) && ! empty($_REQUEST['id_packet'])) {
             
-            $check ++;
-            $query = "UPDATE tbl_product_product SET ";
-            $query .= " id_unit  = '" . $id_unit . "' ";
-            $query .= " WHERE id = '" . $id_product . "'";
-            // Create post
-            if ($conn->query($query)) {
-                $check --;
-            }
+            $id_packet = $_REQUEST['id_packet'];
+            $query .= " id_packet  = '" . $id_packet . "', ";
+           
+        }
+        if (isset($_REQUEST['product_unit_packet']) && ! empty($_REQUEST['product_unit_packet'])) {
+            
+            $product_unit_packet = $_REQUEST['product_unit_packet'];
+            $query .= " product_unit_packet  = '" . $product_unit_packet . "', ";
+
+        }
+        if (isset($_REQUEST['product_name']) && ! empty($_REQUEST['product_name'])) {
+            
+            $product_name = $_REQUEST['product_name'];         
+            $query .= " product_name  = '$product_name', ";
+
+        }
+        if (isset($_REQUEST['id_category']) && ! empty($_REQUEST['id_category'])) {
+            
+            $id_category = $_REQUEST['id_category'];
+            $query .= " id_category  = '" . $id_category . "', ";
         }
         if (isset($_REQUEST['product_name']) && ! empty($_REQUEST['product_name'])) {
             
             $product_name = $_REQUEST['product_name'];
-            
-            $check ++;
-            $query = "UPDATE tbl_product_product SET ";
-            $query .= " product_name  = '" . $product_name . "' ";
-            $query .= " WHERE id = '" . $id_product . "'";
-            // Create post
-            if ($conn->query($query)) {
-                $check --;
-            }
+            $query .= " product_name  = '" . $product_name . "', ";
+
         }
         if (isset($_REQUEST['product_description']) && ! empty($_REQUEST['product_description'])) {
             
             $product_description = $_REQUEST['product_description'];
-            
-            $check ++;
-            $query = "UPDATE tbl_product_product SET ";
-            $query .= " product_description  = '" . $product_description . "' ";
-            $query .= " WHERE id = '" . $id_product . "'";
-            // Create post
-            if ($conn->query($query)) {
-                $check --;
-            }
+            $query .= " product_description  = '" . $product_description . "', ";
+           
         }
         if (isset($_REQUEST['safety_stock']) && ! empty($_REQUEST['safety_stock'])) {
             
             $safety_stock = $_REQUEST['safety_stock'];
-            
-            $check ++;
-            $query = "UPDATE tbl_product_product SET ";
-            $query .= " safety_stock  = '" . $safety_stock . "' ";
-            $query .= " WHERE id = '" . $id_product . "'";
-            // Create post
-            if ($conn->query($query)) {
-                $check --;
-            }
+            $query .= " safety_stock  = '" . $safety_stock . "', ";
         }
         
         $img_photo_product = '';
@@ -206,23 +203,16 @@ switch ($typeManager) {
                     unlink('../' . $p_img);
                 }
             }
-            
-            $check ++;
-            $query = "UPDATE tbl_product_product SET ";
-            $query .= " product_img = '" . $img_photo_product . "' ";
-            $query .= " WHERE id = '" . $id_product . "'";
-            // Create post
-            if ($conn->query($query)) {
-                $check --;
-            } else {
-                returnError("Cập nhật hình ảnh sản phẩm không thành công!");
-            }
+            $query .= " product_img = '" . $img_photo_product . "', ";
+                 
         }
-        
-        if ($check == 0) {
+        $query .= "WHERE id = '" . $id_product . "'";
+        $query_final=str_replace(", WHERE", "  WHERE", $query);// cắt bỏ dấu ',' cuối cùng
+       
+        if ($conn->query($query_final)) {
             returnSuccess("Cập nhật thành công!");
         } else {
-            returnError("Cập nhật không thành công!");
+            returnError("Cập nhật hình ảnh sản phẩm không thành công!");
         }
         
         break;

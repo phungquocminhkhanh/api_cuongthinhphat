@@ -40,13 +40,7 @@ $customer_arr['limit']=strval($limit);
 $start=($page-1)*$limit;
 
 // query
-$sql = "SELECT tbl_customer_customer.id as id,
-                tbl_customer_customer.customer_name as customer_name,
-                tbl_customer_customer.customer_code as customer_code,
-                tbl_customer_customer.customer_sex as customer_sex,
-                tbl_customer_customer.customer_birthday as customer_birthday,
-                tbl_customer_customer.customer_email as customer_email,
-                tbl_customer_customer.customer_phone as customer_phone
+$sql = "SELECT *
 
         FROM tbl_customer_customer
         WHERE 1=1 ";
@@ -56,9 +50,8 @@ if (! empty($filter)) {
                                     OR tbl_customer_customer.customer_phone LIKE '%" . $filter . "%')
         ";
 }
-
+    
 $sql .= " ORDER BY tbl_customer_customer.id DESC LIMIT $start,$limit ";
-
 $result = mysqli_query($conn,$sql);
 
 // Get row count
@@ -72,16 +65,21 @@ $customer_arr['data'] = array();
 
 if($num > 0) {
     // Cat array
-    while($row = $result->fetch_assoc())
+    while($rowItemCustomer = $result->fetch_assoc())
     {
         $c_item = array(
-            'id' => $row['id'],
-            'customer_name' => $row['customer_name'],
-            'customer_code' => $row['customer_code'],
-            'customer_sex' => $row['customer_sex'],
-            'customer_birthday' => $row['customer_birthday'],
-            'customer_email' => $row['customer_email'],
-            'customer_phone' => $row['customer_phone']
+            'id' => $rowItemCustomer['id'],
+            'customer_phone' => $rowItemCustomer['customer_phone'],
+            'customer_name' => $rowItemCustomer['customer_name'],
+            'customer_register' => $rowItemCustomer['customer_register'],
+            'customer_address' => $rowItemCustomer['customer_address'],
+            'customer_status' => $rowItemCustomer['customer_status'],
+            'customer_code' => $rowItemCustomer['customer_code'] != null ? $rowItemCustomer['customer_code'] : "",
+            'customer_enterprise' => $rowItemCustomer['customer_enterprise'] != null ? $rowItemCustomer['customer_enterprise'] : "",
+            'id_admin' => $rowItemCustomer['id_admin'] != null ? $rowItemCustomer['id_admin'] : "",
+            'customer_email' => $rowItemCustomer['customer_email'] != null ? $rowItemCustomer['customer_email'] : "",
+             'customer_company' => $rowItemCustomer['customer_company'] != null ? $rowItemCustomer['customer_company'] : "",
+            'login_type' => 'customer'
         );
         
         // Push to "data"

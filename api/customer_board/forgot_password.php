@@ -1,30 +1,19 @@
 <?php
-if (isset($_REQUEST['customer_phone'])) {
-    if ($_REQUEST['customer_phone'] == '') {
-        unset($_REQUEST['customer_phone']);
+
+if (isset($_REQUEST['customer_phone']) &&  !empty($_REQUEST['customer_phone'])) {
+    $customer_phone = $_REQUEST['customer_phone'];
+}else{
+    returnError('Nhập customer_phone');
+}
+
+if (isset($_REQUEST['new_password']) &&  !empty($_REQUEST['new_password'])) {
+    $new_password = $_REQUEST['new_password'];
+    if(!is_password($new_password))
+    {
+      returnError('Mật khẩu không đúng định dạng hoặc ít hơn 8 chứ số !');
     }
-}
-
-if (isset($_REQUEST['new_password'])) {
-    if ($_REQUEST['new_password'] == '') {
-        unset($_REQUEST['new_password']);
-    }
-}
-
-if (! isset($_REQUEST['customer_phone'])) {
-    echo json_encode(array(
-        'success' => 'false',
-        'message' => 'Nhập số điện thoại đăng ký!'
-    ));
-    exit();
-}
-
-if (! isset($_REQUEST['new_password'])) {
-    echo json_encode(array(
-        'success' => 'false',
-        'message' => 'Nhập mật khẩu mới !'
-    ));
-    exit();
+}else{
+    returnError('Nhập new_password');
 }
 
 if (isset($_REQUEST['new_password'])) {

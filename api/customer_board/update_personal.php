@@ -6,79 +6,13 @@ if (isset($_REQUEST['id_customer']) && ! empty($_REQUEST['id_customer'])) {
     returnError("Nhập id_customer!");
 }
 
-$full_name = '';
-if (isset($_REQUEST['customer_name']) && ! empty($_REQUEST['customer_name'])) {
-    $full_name = $_REQUEST['customer_name'];
-}
-$customer_code = '';
-if (isset($_REQUEST['customer_code']) && ! empty($_REQUEST['customer_code'])) {
-    $customer_code = $_REQUEST['customer_code'];
-}
-$email = '';
-if (isset($_REQUEST['email']) && ! empty($_REQUEST['email'])) {
-    $email = $_REQUEST['email'];
-}
-$sex = '';
-if (isset($_REQUEST['sex']) && ! empty($_REQUEST['sex'])) {
-    $sex = $_REQUEST['sex'];
-}
-$birthday = '';
-if (isset($_REQUEST['birthday']) && ! empty($_REQUEST['birthday'])) {
-    $birthday = $_REQUEST['birthday'];
-}
 
-if (isset($_REQUEST['password'])) {
-    if ($_REQUEST['password'] == '') {
-        unset($_REQUEST['password']);
-    }
-}
-$user_change_password = 0;
-if (isset($_REQUEST['old_password'])) {
-    if ($_REQUEST['old_password'] == '') {
-        unset($_REQUEST['old_password']);
-    } else {
-        $user_change_password = 1;
-        $sql = 'SELECT * FROM tbl_customer_customer WHERE id = ' . $id_customer . ' ';
-        $result = mysqli_query($conn, $sql);
-        while ($row = mysqli_fetch_array($result)) {
-            if ($row['customer_password'] != md5($_REQUEST['old_password'])) {
-                echo json_encode(array(
-                    'success' => 'false',
-                    'message' => 'Mật khẩu cũ không chính xác!'
-                ));
-                exit();
-            }
-        }
-    }
-}
 
 $check = 0;
 
-if (isset($customer_code) && ! empty($customer_code)) {
-    
-    // check employee_code exists
-    $sql_check_customer_code = "SELECT * FROM tbl_customer_customer WHERE customer_code = '" . $customer_code . "' AND id != '".$id_customer."'
-            ";
-    $result_check_customer_code = $conn->query($sql_check_customer_code);
-    $num_result_check_customer_code = mysqli_num_rows($result_check_customer_code);
-    if ($num_result_check_customer_code > 0) {
-        returnError("Mã khách hàng đã tồn tại!");
-    }
-    
-    $check ++;
-    $query = "UPDATE tbl_customer_customer SET ";
-    $query .= " customer_code  = '" . $customer_code . "' ";
-    $query .= " WHERE id = '" . $id_customer . "'";
-    // Create post
-    if ($conn->query($query)) {
-        $check --;
-    } else {
-        returnError("Cập nhật mã khách hàng không thành công!");
-    }
-}
-
-if (isset($full_name) && ! empty($full_name)) {
-    $check ++;
+if (isset($_REQUEST['customer_name']) && ! empty($_REQUEST['customer_name'])) {
+    $full_name = addslashes($_REQUEST['customer_name']);
+     $check ++;
     $query = "UPDATE tbl_customer_customer SET ";
     $query .= " customer_name  = '" . $full_name . "' ";
     $query .= " WHERE id = '" . $id_customer . "'";
@@ -90,36 +24,25 @@ if (isset($full_name) && ! empty($full_name)) {
     }
 }
 
-if (isset($sex) && ! empty($sex)) {
-    $check ++;
+if (isset($_REQUEST['customer_company']) && ! empty($_REQUEST['customer_company'])) {
+    $customer_company = addslashes($_REQUEST['customer_company']);
+     $check ++;
     $query = "UPDATE tbl_customer_customer SET ";
-    $query .= " customer_sex  = '" . $sex . "' ";
+    $query .= " customer_company  = '" . $customer_company . "' ";
     $query .= " WHERE id = '" . $id_customer . "'";
     // Create post
     if ($conn->query($query)) {
         $check --;
     } else {
-        returnError("Cập nhật giới tính không thành công!");
+        returnError("Cập nhật tên công ty không thành công!");
     }
 }
 
-if (isset($birthday) && ! empty($birthday)) {
-    $check ++;
+if (isset($_REQUEST['customer_email']) && ! empty($_REQUEST['customer_email'])) {
+    $customer_email = addslashes($_REQUEST['customer_email']);
+     $check ++;
     $query = "UPDATE tbl_customer_customer SET ";
-    $query .= " customer_birthday  = '" . $birthday . "' ";
-    $query .= " WHERE id = '" . $id_customer . "'";
-    // Create post
-    if ($conn->query($query)) {
-        $check --;
-    } else {
-        returnError("Cập nhật ngày sinh không thành công!");
-    }
-}
-
-if (isset($email) && ! empty($email)) {
-    $check ++;
-    $query = "UPDATE tbl_customer_customer SET ";
-    $query .= " customer_email  = '" . $email . "' ";
+    $query .= " customer_email  = '" . $customer_email . "' ";
     $query .= " WHERE id = '" . $id_customer . "'";
     // Create post
     if ($conn->query($query)) {
@@ -129,16 +52,70 @@ if (isset($email) && ! empty($email)) {
     }
 }
 
-if (isset($_REQUEST['password']) && ! empty($_REQUEST['password']) && $user_change_password == 1) {
-    $check ++;
+if (isset($_REQUEST['customer_code']) && ! empty($_REQUEST['customer_code'])) {
+    $customer_code = addslashes($_REQUEST['customer_code']);
+     $check ++;
     $query = "UPDATE tbl_customer_customer SET ";
-    $query .= "customer_password  = '" . md5(mysqli_real_escape_string($conn, $_REQUEST['password'])) . "' ";
-    $query .= "WHERE id = '" . $id_customer . "'";
-    // check execute query
+    $query .= " customer_code  = '" . $customer_code . "' ";
+    $query .= " WHERE id = '" . $id_customer . "'";
+    // Create post
     if ($conn->query($query)) {
         $check --;
     } else {
-        returnError("Cập nhật customer_password không thành công!");
+        returnError("Cập nhật email không thành công!");
+    }
+}
+
+$user_change_password = 0;
+if (isset($_REQUEST['old_password']) && ! empty($_REQUEST['old_password'])) {
+    $old_password = md5($_REQUEST['old_password']);
+
+    $sql = "SELECT * FROM tbl_customer_customer 
+    WHERE id = '$id_customer'
+    AND customer_password ='$old_password'
+    ";
+
+    $result = mysqli_query($conn, $sql);
+    $num = mysqli_num_rows($result);
+    if ($num > 0) {
+         $user_change_password = 1;
+    }else{
+        returnError('Mật khẩu cũ không chính xác!');
+    }
+       
+}
+
+if (isset($_REQUEST['password']) && ! empty($_REQUEST['password']) && $user_change_password == 1) {
+    if(is_password($_REQUEST['password'])){
+        $new_pass = md5($_REQUEST['password']);
+        $check ++;
+        $customer_password = md5($_REQUEST['password']);
+        $query = "UPDATE tbl_customer_customer SET ";
+        $query .= "customer_password  = '$customer_password' ";
+        $query .= "WHERE id = '" . $id_customer . "'";
+        // check execute query
+        if ($conn->query($query)) {
+            $check --;
+        } else {
+            returnError("Cập nhật mật khẩu không thành công!");
+        }
+    }else{
+        returnError("Mật khẩu không đúng định dạng !");
+    }
+}
+
+
+if (isset($_REQUEST['customer_name']) && ! empty($_REQUEST['customer_name'])) {
+    $full_name = addslashes($_REQUEST['customer_name']);
+     $check ++;
+    $query = "UPDATE tbl_customer_customer SET ";
+    $query .= " customer_name  = '" . $full_name . "' ";
+    $query .= " WHERE id = '" . $id_customer . "'";
+    // Create post
+    if ($conn->query($query)) {
+        $check --;
+    } else {
+        returnError("Cập nhật tên đầy đủ không thành công!");
     }
 }
 
@@ -146,8 +123,7 @@ if ($check == 0) {
     // get all user new info
     $result_arr = array();
     
-    $sql_get_customer = "SELECT
-                   *
+    $sql_get_customer = "SELECT *
             FROM  tbl_customer_customer
             WHERE id = '" . $id_customer . "'
            ";
@@ -157,13 +133,18 @@ if ($check == 0) {
     
     while ($rowItemCustomer = $result_get_customer->fetch_assoc()) {
         
-        $user_item = array(
+        $user_item =  array(
             'id' => $rowItemCustomer['id'],
             'customer_phone' => $rowItemCustomer['customer_phone'],
             'customer_name' => $rowItemCustomer['customer_name'],
-            'customer_sex' => $rowItemCustomer['customer_sex'],
-            'customer_birthday' => $rowItemCustomer['customer_birthday'],
-            'customer_email' => $rowItemCustomer['customer_email'],
+            'customer_register' => $rowItemCustomer['customer_register'],
+            'customer_address' => $rowItemCustomer['customer_address'],
+            'customer_status' => $rowItemCustomer['customer_status'],
+            'customer_code' => $rowItemCustomer['customer_code'] != null ? $rowItemCustomer['customer_code'] : "",
+            'customer_enterprise' => $rowItemCustomer['customer_enterprise'] != null ? $rowItemCustomer['customer_enterprise'] : "",
+            'id_admin' => $rowItemCustomer['id_admin'] != null ? $rowItemCustomer['id_admin'] : "",
+            'customer_email' => $rowItemCustomer['customer_email'] != null ? $rowItemCustomer['customer_email'] : "",
+             'customer_company' => $rowItemCustomer['customer_company'] != null ? $rowItemCustomer['customer_company'] : "",
             'login_type' => 'customer'
         );
         

@@ -1,41 +1,49 @@
 <?php
-$customer_name = '';
+
 if (isset($_REQUEST['customer_name']) && ! empty($_REQUEST['customer_name'])) {
     $customer_name = $_REQUEST['customer_name'];
 } else {
     returnError("Nhập tên đầy đủ!");
 }
 
-$password = '';
-if (isset($_REQUEST['password']) && ! empty($_REQUEST['password'])) {
-    $password = md5($_REQUEST['password']);
+if (isset($_REQUEST['id_admin']) && ! empty($_REQUEST['id_admin'])) {
+    $id_admin = $_REQUEST['id_admin'];
+}
+
+if (isset($_REQUEST['customer_password']) && ! empty($_REQUEST['customer_password'])) {
+    $customer_password = md5($_REQUEST['customer_password']);
 } else {
     returnError("Nhập mật khẩu!");
 }
 
-$customer_phone = '';
 if (isset($_REQUEST['customer_phone']) && ! empty($_REQUEST['customer_phone'])) {
-    $customer_phone = $_REQUEST['customer_phone'];
+    $customer_phone = addslashes($_REQUEST['customer_phone']);
 } else {
     returnError("Nhập customer_phone!");
 }
 
-$customer_code = '';
 if (isset($_REQUEST['customer_code']) && ! empty($_REQUEST['customer_code'])) {
-    $customer_code = $_REQUEST['customer_code'];
+    $customer_code = addslashes($_REQUEST['customer_code']);
 }
-$customer_sex = '';
-if (isset($_REQUEST['sex']) && ! empty($_REQUEST['sex'])) {
-    $customer_sex = $_REQUEST['sex'];
+
+if (isset($_REQUEST['customer_email']) && ! empty($_REQUEST['customer_email'])) {
+    $customer_email = addslashes($_REQUEST['customer_email']);
 }
-$customer_birthday = '';
-if (isset($_REQUEST['birthday']) && ! empty($_REQUEST['birthday'])) {
-    $customer_birthday = $_REQUEST['birthday'];
+
+if (isset($_REQUEST['customer_company']) && ! empty($_REQUEST['customer_company'])) {
+    $customer_company = addslashes($_REQUEST['customer_company']);
 }
-$customer_email = '';
-if (isset($_REQUEST['email']) && ! empty($_REQUEST['email'])) {
-    $customer_email = $_REQUEST['email'];
+
+if (isset($_REQUEST['customer_enterprise']) && ! empty($_REQUEST['customer_enterprise'])) {
+    $customer_enterprise = $_REQUEST['customer_enterprise'];
 }
+
+if (isset($_REQUEST['customer_address']) && ! empty($_REQUEST['customer_address'])) {
+    $customer_address = addslashes($_REQUEST['customer_address']);
+}else {
+    returnError("Nhập customer_address!");
+}
+
 
 // start check customer exists
 $sql = "SELECT * FROM tbl_customer_customer WHERE customer_phone = '" . $customer_phone . "'  ";
@@ -50,28 +58,28 @@ if ($result->num_rows > 0) {
 
 $sql = "
     INSERT INTO tbl_customer_customer
-    SET customer_phone           = '" . $customer_phone . "',
-        customer_name          = '" . $customer_name . "'
+    SET customer_phone           = '$customer_phone'
+        ,customer_name          = '$customer_name'
+        ,customer_password          = '$customer_password'
+        ,customer_address          = '$customer_address'
     ";
 
-if (! empty($password)) {
-    $sql .= " , customer_password = '" . $password . "'";
+if (! empty($customer_company)) {
+    $sql .= " , customer_company = '" . $customer_company . "'";
 }
-if (! empty($customer_code)) {
-    $sql .= " , customer_code = '" . $customer_code . "'";
+if (! empty($id_admin)) {
+    $sql .= " , id_admin = '" . $id_admin . "'";
 }
-if (! empty($customer_sex)) {
-    $sql .= " , customer_sex = '" . $customer_sex . "'";
-}
-if (! empty($customer_birthday)) {
-    $sql .= " , customer_birthday = '" . $customer_birthday . "'";
+if (! empty($customer_enterprise)) {
+    $sql .= " , customer_enterprise = '" . $customer_enterprise . "'";
 }
 if (! empty($customer_email)) {
     $sql .= " , customer_email = '" . $customer_email . "'";
 }
+if (! empty($customer_code)) {
+    $sql .= " , customer_code = '" . $customer_code . "'";
+}
 
-// echo $sql;
-// exit;
 
 // Return customer info just created
 if ($conn->query($sql)) {
@@ -94,10 +102,14 @@ if ($conn->query($sql)) {
             'id' => $rowItemCustomer['id'],
             'customer_phone' => $rowItemCustomer['customer_phone'],
             'customer_name' => $rowItemCustomer['customer_name'],
+            'customer_register' => $rowItemCustomer['customer_register'],
+            'customer_address' => $rowItemCustomer['customer_address'],
+            'customer_status' => $rowItemCustomer['customer_status'],
             'customer_code' => $rowItemCustomer['customer_code'] != null ? $rowItemCustomer['customer_code'] : "",
-            'customer_sex' => $rowItemCustomer['customer_sex'] != null ? $rowItemCustomer['customer_sex'] : "",
-            'customer_birthday' => $rowItemCustomer['customer_birthday'] != null ? $rowItemCustomer['customer_birthday'] : "",
+            'customer_enterprise' => $rowItemCustomer['customer_enterprise'] != null ? $rowItemCustomer['customer_enterprise'] : "",
+            'id_admin' => $rowItemCustomer['id_admin'] != null ? $rowItemCustomer['id_admin'] : "",
             'customer_email' => $rowItemCustomer['customer_email'] != null ? $rowItemCustomer['customer_email'] : "",
+             'customer_company' => $rowItemCustomer['customer_company'] != null ? $rowItemCustomer['customer_company'] : "",
             'login_type' => 'customer'
         );
         
@@ -111,10 +123,7 @@ if ($conn->query($sql)) {
         exit();
     }
 } else {
-    echo json_encode(array(
-        'success' => 'false',
-        'message' => 'Đăng ký không thành công!'
-    ));
+    returnError('Đăng ký không thành công!');
 }
 
 ?>

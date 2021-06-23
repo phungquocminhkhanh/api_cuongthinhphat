@@ -191,8 +191,13 @@ $sql .= " ORDER BY tbl_order_order.order_date_create DESC LIMIT $start,$limit ";
 // echo $sql;
 // exit;
 $result = mysqli_query($conn, $sql);
-$num = mysqli_num_rows($result);
-
+if(empty($result)){
+    $num=0;
+}
+else
+{
+    $num = mysqli_num_rows($result);
+}
 $order_arr['success'] = 'true';
 $order_arr['data'] = array();
 

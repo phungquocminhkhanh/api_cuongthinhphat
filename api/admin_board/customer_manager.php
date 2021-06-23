@@ -28,18 +28,12 @@ switch ($typeManager) {
         
     case 'delete_customer':
         
-        if (isset($_REQUEST['id_customer'])) {
-            if ($_REQUEST['id_customer'] == '') {
-                unset($_REQUEST['id_customer']);
-                returnError("Nhập id_customer");
-            }
-        }
-        
-        if (! isset($_REQUEST['id_customer'])) {
+        if (isset($_REQUEST['id_customer']) && ! empty($_REQUEST['id_customer'])) {
+          $id_customer = $_REQUEST['id_customer'];
+        } else {
             returnError("Nhập id_customer");
         }
         
-        $id_customer = $_REQUEST['id_customer'];
         
         $sql_check_customer_exists = "SELECT * FROM tbl_customer_customer WHERE id = '" . $id_customer . "'";
         
@@ -77,26 +71,26 @@ switch ($typeManager) {
         
     case 'resset_password_customer':
         
-        if (isset($_REQUEST['id_customer'])) {
-            if ($_REQUEST['id_customer'] == '') {
-                unset($_REQUEST['id_customer']);
-                returnError("Nháº­p id_customer");
+        if (isset($_REQUEST['id_customer']) && ! empty($_REQUEST['id_customer'])) {
+            $id_customer = $_REQUEST['id_customer'];
+        } else {
+            returnError("Nhập id_customer!");
+        }
+
+        if (isset($_REQUEST['password_reset']) && ! empty($_REQUEST['password_reset'])) {
+             $password_reset = $_REQUEST['password_reset']; 
+            if(is_password($password_reset))
+            {
+                $password_reset = $_REQUEST['password_reset'];
+            }else{
+               returnError("Mật khẩu không đúng định dạng!");
             }
         } else {
-            returnError("Nhập id_customer");
+            returnError("Nhập password_reset!");
         }
+
+
         
-        if (isset($_REQUEST['password_reset'])) {
-            if ($_REQUEST['password_reset'] == '') {
-                unset($_REQUEST['password_reset']);
-                returnError("Nhập password_reset");
-            }
-        } else {
-            returnError("Nhập password_reset");
-        }
-        
-        $id_customer = $_REQUEST['id_customer'];
-        $password_reset = $_REQUEST['password_reset'];
         
         $sql_check_customer_exists = "SELECT * FROM tbl_customer_customer WHERE id = '" . $id_customer . "'";
         
