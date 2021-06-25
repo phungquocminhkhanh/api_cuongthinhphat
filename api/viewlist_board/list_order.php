@@ -55,6 +55,7 @@ if (! empty($order_status)) {
         $sql_count_order .= " AND ( tbl_order_order.order_status = '1'
                         OR tbl_order_order.order_status = '2'
                         OR tbl_order_order.order_status = '3'
+                        OR tbl_order_order.order_status = '4'
         )";
     } else{
         $sql_count_order .= " AND tbl_order_order.order_status = '" . $order_status . "' ";
@@ -123,17 +124,14 @@ $sql = "SELECT
             tbl_order_order.id_customer as id_customer,
             tbl_order_order.order_status as order_status,
             tbl_order_order.order_date_delivery as order_date_delivery,
-            tbl_order_order.order_branch_title_delivery as order_branch_title_delivery,
-            tbl_order_order.order_branch_phone_delivery as order_branch_phone_delivery,
-            tbl_order_order.order_branch_addr_delivery as order_branch_addr_delivery,
-            tbl_order_order.order_customer_note as order_customer_note,
+            tbl_order_order.order_record_delivery as order_record_delivery,
+            tbl_order_order.order_record_shipping as order_record_shipping,
+            tbl_order_order.order_note as order_note,
             tbl_order_order.order_total_cost as order_total_cost,
-            tbl_order_order.cancel_comment as cancel_comment,
+            tbl_order_order.order_record_cancel_note as order_record_cancel_note,
 
             tbl_customer_customer.customer_name as customer_name,
             tbl_customer_customer.customer_code as customer_code,
-            tbl_customer_customer.customer_sex as customer_sex,
-            tbl_customer_customer.customer_birthday as customer_birthday,
             tbl_customer_customer.customer_email as customer_email,
             tbl_customer_customer.customer_phone as customer_phone,
 
@@ -144,6 +142,7 @@ $sql = "SELECT
           ON tbl_customer_customer.id = tbl_order_order.id_customer
     
           WHERE 1=1
+          
          ";
 
 if (! empty($order_status)) {
@@ -151,6 +150,7 @@ if (! empty($order_status)) {
         $sql .= " AND ( tbl_order_order.order_status = '1'
                         OR tbl_order_order.order_status = '2'
                         OR tbl_order_order.order_status = '3'
+                        OR tbl_order_order.order_status = '4'
         )";
     } else{
         $sql .= " AND tbl_order_order.order_status = '" . $order_status . "' ";
@@ -210,19 +210,16 @@ if ($num > 0) {
             'id_customer' => $row['id_customer'],
             'order_status' => $row['order_status'],
             'order_date_delivery' => $row['order_date_delivery'],
-            'order_branch_title_delivery' => $row['order_branch_title_delivery'],
-            'order_branch_addr_delivery' => $row['order_branch_addr_delivery'],
-            'order_branch_phone_delivery' => $row['order_branch_phone_delivery'],
+            'order_record_delivery' => $row['order_record_delivery'],
+            'order_record_shipping' => $row['order_record_shipping'],
             'order_total_cost' => $row['order_total_cost'] != null ? (string) $row['order_total_cost'] : "",
             'order_date_create' => $row['order_date_create'],
-            'order_customer_note' => $row['order_customer_note'],
-            'cancel_comment' => $row['cancel_comment'] != null ? $row['cancel_comment'] : "",
+            'order_note' => $row['order_note']!= null ? $row['order_note'] : "",
+            'order_record_cancel_note' => $row['order_record_cancel_note'] != null ? $row['order_record_cancel_note'] : "",
             
             'customer_code' => $row['customer_code'] != null ? $row['customer_code'] : "",
             'customer_phone' => $row['customer_phone'],
             'customer_name' => $row['customer_name'],
-            'customer_sex' => $row['customer_sex'] != null ? $row['customer_sex'] : "",
-            'customer_birthday' => $row['customer_birthday'] != null ? $row['customer_birthday'] : "",
             'customer_email' => $row['customer_email'] != null ? $row['customer_email'] : "",
             
             'order_item_product' => array()
@@ -243,15 +240,38 @@ if ($num > 0) {
                                                 tbl_product_product.product_code as product_code,
                                                 tbl_product_product.product_description as product_description,
                                                 tbl_product_product.product_img as product_img,
-                                                tbl_product_product.id_unit as id_unit
+                                                tbl_product_product.id_unit as id_unit,
+                                                tbl_product_product.id_packet as id_packet,
+                                                tbl_product_product.product_unit_packet as product_unit_packet
 
-                     FROM tbl_product_product
+                     FROM tbl_product_product 
+                     LEFT JOIN tbl_product_unit 
+                                                ON tbl_product_unit.id=tbl_product_product.id_unit
                      WHERE tbl_product_product.id = '" . $rowItemProductOrder['id_product'] . "'
                 ";
                 $result_get_product_info = mysqli_query($conn, $sql_get_product_info);
                 $num_result_get_product_info = mysqli_num_rows($result_get_product_info);
                 if ($num_result_get_product_info > 0) {
+                
+
+
                     while ($rowItemProductInfo = $result_get_product_info->fetch_assoc()) {
+                        //get unit
+                        $sql_get_unit="SELECT unit_title
+                                FROM `tbl_product_unit` 
+                                WHERE id='" . $rowItemProductInfo['id_unit'] . "'
+                            ";
+                        $result_sql_get_unit=mysqli_query($conn, $sql_get_unit);
+                        $unit=$result_sql_get_unit->fetch_assoc();
+                        //get packet
+                        $sql_get_packet="SELECT unit_title
+                                FROM `tbl_product_unit` 
+                                WHERE id='" . $rowItemProductInfo['id_packet'] . "'
+                            ";
+                        $result_sql_get_packet=mysqli_query($conn, $sql_get_packet);
+                        $packet=$result_sql_get_packet->fetch_assoc();
+
+
                         $product_item = array(
                             'id' => $rowItemProductInfo['id'],
                             'id_category' => $rowItemProductInfo['id_category'],
@@ -259,8 +279,12 @@ if ($num > 0) {
                             'product_code' => $rowItemProductInfo['product_code'],
                             'product_description' => changeLineBreak(stripCKeditor($rowItemProductInfo['product_description'])),
                             'product_img' => $rowItemProductInfo['product_img'],
-                            'quantity_order' => $rowItemProductOrder['detail_quantity'],
-                            'id_unit' => $rowItemProductInfo['id_unit']
+
+                            'product_quantity_packet' => $rowItemProductOrder['quantity_packet'],
+
+                            'product_unit_title' => $unit['unit_title'],
+                            'product_packet_title' => $packet['unit_title'],
+                            'product_unit_packet' => $rowItemProductInfo['product_unit_packet']
                         );
                         
                         array_push($order_item['order_item_product'], $product_item);

@@ -121,40 +121,41 @@ if (isset($_REQUEST['customer_name']) && ! empty($_REQUEST['customer_name'])) {
 
 if ($check == 0) {
     // get all user new info
-    $result_arr = array();
+    // $result_arr = array();
     
-    $sql_get_customer = "SELECT *
-            FROM  tbl_customer_customer
-            WHERE id = '" . $id_customer . "'
-           ";
-    $result_get_customer = mysqli_query($conn, $sql_get_customer);
+    // $sql_get_customer = "SELECT *
+    //         FROM  tbl_customer_customer
+    //         WHERE id = '" . $id_customer . "'
+    //        ";
+    // $result_get_customer = mysqli_query($conn, $sql_get_customer);
     
-    $num_row_result_get_customer = mysqli_num_rows($result_get_customer);
+    // $num_row_result_get_customer = mysqli_num_rows($result_get_customer);
     
-    while ($rowItemCustomer = $result_get_customer->fetch_assoc()) {
+    // while ($rowItemCustomer = $result_get_customer->fetch_assoc()) {
         
-        $user_item =  array(
-            'id' => $rowItemCustomer['id'],
-            'customer_phone' => $rowItemCustomer['customer_phone'],
-            'customer_name' => $rowItemCustomer['customer_name'],
-            'customer_register' => $rowItemCustomer['customer_register'],
-            'customer_address' => $rowItemCustomer['customer_address'],
-            'customer_status' => $rowItemCustomer['customer_status'],
-            'customer_code' => $rowItemCustomer['customer_code'] != null ? $rowItemCustomer['customer_code'] : "",
-            'customer_enterprise' => $rowItemCustomer['customer_enterprise'] != null ? $rowItemCustomer['customer_enterprise'] : "",
-            'id_admin' => $rowItemCustomer['id_admin'] != null ? $rowItemCustomer['id_admin'] : "",
-            'customer_email' => $rowItemCustomer['customer_email'] != null ? $rowItemCustomer['customer_email'] : "",
-             'customer_company' => $rowItemCustomer['customer_company'] != null ? $rowItemCustomer['customer_company'] : "",
-            'login_type' => 'customer'
-        );
+    //     $user_item =  array(
+    //         'id' => $rowItemCustomer['id'],
+    //         'customer_phone' => $rowItemCustomer['customer_phone'],
+    //         'customer_name' => $rowItemCustomer['customer_name'],
+    //         'customer_register' => $rowItemCustomer['customer_register'],
+    //         'customer_address' => $rowItemCustomer['customer_address'],
+    //         'customer_status' => $rowItemCustomer['customer_status'],
+    //         'customer_code' => $rowItemCustomer['customer_code'] != null ? $rowItemCustomer['customer_code'] : "",
+    //         'customer_enterprise' => $rowItemCustomer['customer_enterprise'] != null ? $rowItemCustomer['customer_enterprise'] : "",
+    //         'id_admin' => $rowItemCustomer['id_admin'] != null ? $rowItemCustomer['id_admin'] : "",
+    //         'customer_email' => $rowItemCustomer['customer_email'] != null ? $rowItemCustomer['customer_email'] : "",
+    //          'customer_company' => $rowItemCustomer['customer_company'] != null ? $rowItemCustomer['customer_company'] : "",
+    //         'login_type' => 'customer'
+    //     );
         
         $result_arr['success'] = 'true';
-        $result_arr['data'] = array(
-            $user_item
-        );
+        $result_arr['message'] = 'Cập nhật thành công';
+        // $result_arr['data'] = array(
+        //     $user_item
+        // );
         echo json_encode($result_arr);
         exit();
-    }
+    //}
 } else {
     returnError("Cập nhật thông tin không thành công!");
 }

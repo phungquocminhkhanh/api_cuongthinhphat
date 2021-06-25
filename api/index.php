@@ -73,6 +73,11 @@ switch ($detect) {
             include_once 'viewlist_board/list_order.php';
             break;
         }
+    case 'list_order_detail':
+        {
+            include_once 'viewlist_board/list_order_detail.php';
+            break;
+        }    
     case 'list_order_history':
         {
             include_once 'viewlist_board/list_order_history.php';
@@ -91,6 +96,11 @@ switch ($detect) {
     case 'list_order_export':
         {
             include_once 'viewlist_board/list_order_export.php';
+            break;
+        }
+    case 'get_list_order_log':
+        {
+            include_once 'viewlist_board/get_list_order_log.php';
             break;
         }
     case 'get_order_tracking':

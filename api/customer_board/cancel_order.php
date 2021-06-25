@@ -24,7 +24,14 @@ if($row["order_status"]=='1')
                         order_record_cancel_note='$order_record_cancel_note' 
                     WHERE id='$id_order'
                         ";
+
     if ($conn->query($query)) {
+         $sql_log = 'INSERT INTO tbl_order_process_log
+                                         SET
+                                         id_order = "' . $id_order . '",
+                                         order_status = "6"';
+                mysqli_query($conn, $sql_log);
+                
         returnSuccess("Hủy đơn hàng thành công!");
     }
     else

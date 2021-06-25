@@ -18,7 +18,13 @@ switch ($typeManager) {
     
     case 'create_slide':
         
-        $slide_title = '';
+       
+        if (isset($_REQUEST['id_admin']) && ! empty($_REQUEST['id_admin'])) {
+            $id_admin = $_REQUEST['id_admin'];
+           
+        } else {
+            returnError("Nhập tên id_admin!");
+        }
         if (isset($_REQUEST['slide_title']) && ! empty($_REQUEST['slide_title'])) {
             $slide_title = $_REQUEST['slide_title'];
             
@@ -53,8 +59,10 @@ switch ($typeManager) {
         
         $sql_create_slide = "
             INSERT INTO tbl_company_slide SET
+             id_admin     = '" . $id_admin . "',
              slide_title            = '" . $slide_title . "',
              slide_img     = '" . $img_photo_slide . "'
+
         ";
         
         if ($conn->query($sql_create_slide)) {
@@ -136,7 +144,22 @@ switch ($typeManager) {
                 returnError("Cập nhật hình ảnh slide không thành công!");
             }
         }
-        
+
+        if (isset($_REQUEST['slide_order']) && ! empty($_REQUEST['slide_order'])) {
+            $slide_order = $_REQUEST['slide_order'];
+            
+            
+            $check ++;
+            $query = "UPDATE tbl_company_slide SET ";
+            $query .= " slide_order  = '" . $slide_order . "' ";
+            $query .= " WHERE id = '" . $id_slide . "'";
+            // Create post
+            if ($conn->query($query)) {
+                $check --;
+            } else {
+                returnError("Cập nhật thứ tự slide  không thành công!");
+            }
+        }
         if ($check > 0) {
             returnError("Cập nhật slide thành công!");
         } else {

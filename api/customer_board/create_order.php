@@ -74,9 +74,17 @@ $sql = ' INSERT INTO tbl_order_order
 //$result = mysqli_query($conn, $sql);
 
 if ($conn->query($sql)) {
+
     // insert into table_order_detail
     $id_order = mysqli_insert_id($conn);
     
+    // ghi log
+    $sql_log = 'INSERT INTO tbl_order_process_log
+                                         SET
+                                         id_order = "' . $id_order . '",
+                                         order_status = "1"';
+                mysqli_query($conn, $sql_log);
+
     // cập nhật thông tin order
     if (! empty($id_product) && count($id_product) > 0) {
         for ($i = 0; $i < count($id_product); $i++) {

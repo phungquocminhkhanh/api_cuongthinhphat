@@ -4,6 +4,7 @@ $sql = "SELECT
             *
           FROM tbl_company_slide
           WHERE 1=1
+          ORDER BY slide_order ASC
          ";
 
 $result = $conn->query($sql);
@@ -17,7 +18,8 @@ if ($num > 0) {
         $hotline_item = array(
             'id' => $row['id'],
             'slide_title' => $row['slide_title'],
-            'slide_img' => $row['slide_img']
+            'slide_img' => $row['slide_img'],
+            'slide_order' => $row['slide_order']
             
         );
         

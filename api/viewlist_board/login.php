@@ -115,10 +115,12 @@ if ($num_result_check_employee_exists > 0) {
                     'id' => $row['id'],
                     'customer_phone' => $row['customer_phone'],
                     'customer_code' => $row['customer_code'],
+                    'customer_enterprise' => $row['customer_enterprise'],
+                    'customer_company' => $row['customer_company'],
                     'customer_name' => $row['customer_name'],
-                    'customer_sex' => $row['customer_sex'],
-                    'customer_birthday' => $row['customer_birthday'],
+                    'customer_phone' => $row['customer_phone'],
                     'customer_email' => $row['customer_email'],
+                    'customer_address' => $row['customer_address']!=null?$row['customer_address']:"",
                     'login_type' => 'customer'
                 );
                 
